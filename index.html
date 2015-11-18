@@ -14,11 +14,12 @@
 
     <link rel="stylesheet" href="styles/lib-f70a033e5b.css">
 
-    <link rel="stylesheet" href="styles/app-694a7477a5.css">
+    <link rel="stylesheet" href="styles/app-9856bf5c35.css">
 </head>
-<body>
+<body ng-class="{loggedIn: userLoggedIn}">
     <div>
-        <div ng-include="'app/layout/shell.html'"></div>
+        <!-- <div ng-include="'app/layout/shell.html'"></div> -->
+        <div ui-view></div>
         <div id="splash-page" ng-show="showSplash">
             <div class="page-splash">
                 <div class="page-splash-message">
@@ -31,8 +32,8 @@
         </div>
     </div>
 
-    <script src="js/lib-4b4ba445e6.js"></script>
+    <script src="js/lib-1fe4371ea3.js"></script>
 
-    <script src="js/app-2ec206b910.js"></script>
+    <script src="js/app-ea8022dcb6.js"></script>
 </body>
 </html>
